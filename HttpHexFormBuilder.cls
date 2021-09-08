@@ -65,6 +65,8 @@ public class HttpHexFormBuilder {
             mimeType = 'image/x-portable-graymap';
         } else if (fileType.equalsIgnoreCase('ppm')) {
             mimeType = 'image/x-portable-pixmap';            
+        } else if (fileType.equalsIgnoreCase('pdf')) {
+            mimeType = 'application/pdf';            
         }
         return mimeType;
     }
