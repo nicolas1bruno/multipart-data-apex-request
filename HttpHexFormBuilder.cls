@@ -54,7 +54,7 @@ public class HttpHexFormBuilder {
         return EncodingUtil.convertFromHex( this.getFormAsString() );
     }
  
-    private static String resolveMimeType(String fileName) {
+    @TestVisible private static String resolveMimeType(String fileName) {
         String fileType = fileName.substringAfterLast('.');
         String mimeType = 'image/png';
         if (fileType.equalsIgnoreCase('png')) {
